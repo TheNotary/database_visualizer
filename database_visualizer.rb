@@ -17,6 +17,6 @@ module DatabaseVisualizer::Views
     html { body { self << yield } }
   end
   def index
-    div.page "Welcome!"
+    div.page "Welcome!  <%= Time.now %>"
   end
 end
